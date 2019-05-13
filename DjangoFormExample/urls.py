@@ -27,4 +27,5 @@ urlpatterns = [
 	url(r'^signup/', newsletter_views.signupform),
     path('admin/', admin.site.urls),
     path('newsletter/', include('newsletter.urls')),
+    path('', include('blog.urls')),
 ]
